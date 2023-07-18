@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* nav section starts */
+nav{
+    /* border: 1px solid rgb(102, 102, 103); */
+    background-color: #9376e0;
+}
+.nav-container{
+    min-height: 50px;
+    max-width: 1400px;
+    display: flex;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+.nav-container img{
+    /* border: 1px solid black; */
+    width: 50px;
+    object-fit: cover;
+}
+
+.logo-container{
+    display: flex;
+    gap: 15px;
+    width: 50%;
+}
+.logo-container p{
+    font-size: 30px;
+}
+.hive{
+    color: palevioletred;
+}
+/* nav section ends */
+/* menu section starts */
+.menu-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.menu-container a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.menu-container .login-btn{
+    padding: 10px 35px;
+    background-color: palevioletred;
+    color: black;
+    border-radius: 8px;
+    font-weight: 600;
+}
+/* menu section ends */
+/* banner section starts */
+.banner-section{
+    margin: 50px auto;
+    background-color: #e6e9eb;
+    max-width: 1400px;
+    min-height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+}
+.banner-text{
+    width: 50%;
+    text-align: center;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.banner-text h1{
+    font-size: 50px;
+    background-image: linear-gradient(to bottom,#9376e0,#e893cf);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.banner-text p{
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+}
+.icons{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto 40px;
+}
+.fa-brands{
+    font-size: 50px;
+}
+.primary-btn{
+    padding: 10px 20px;
+    border: 2px solid plum;
+    background-color: transparent;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+/* banner section ends */
+
+
+/* media query */
+@media screen and (max-width:567px) {
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .menu-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo-container{
+        margin: auto;
+    }
+    .menu-container a{
+        margin-top: 10px;
+    }
+    .menu-container .login-btn{
+        width: 100%;
+        border-radius: 0;
+        
+    }
+
+    .banner-section{
+        flex-direction: column;
+    }
+    .banner-img,.banner-text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .banner-text h1{
+        font-size: 30px;
+    }
+    .banner-text p{
+        font-size: 25px;
+    }
+    .fa-brands{
+        font-size: 30px;
+    }
+    
+}
